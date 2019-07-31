@@ -1,5 +1,9 @@
 body{
   margin: 0px;
+  font-size: 12pt;
+}
+* { 
+  font-family: 'Open Sans:300', Helvetica, sans-serif
 }
 
 nav{
@@ -73,6 +77,21 @@ footer {
   bottom: 0px;
   margin: 0px;
   padding: 40px 0px 40px 0px;
+
+}
+a:link{
+  text-decoration: none;
+  transition: .5s;
+}
+footer a:link {
+  color: #bbb;
+}
+
+footer a:visited {
+  color: #777;
+}
+footer a:hover {
+  color: rgb(136, 224, 250);
 }
 
 footer section{
@@ -86,4 +105,20 @@ footer li {
 
 footer ul{
   padding-left: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+  font-family: 'Open Sans:800', Helvetica, sans-serif
+}
+
+h1 {
+  font-size: 2em;
+}
+
+footer h1{
+  font-family: 'Open Sans:800', Helvetica, sans-serif
+}
+
+body > section {
+  padding: 30px 45px 30px 45px;
 }
