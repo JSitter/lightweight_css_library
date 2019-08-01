@@ -3,7 +3,7 @@ body{
   font-size: 12pt;
 }
 * { 
-  font-family: 'Open Sans:300', Helvetica, sans-serif
+  font-family: 'Lato', Helvetica, sans-serif
 }
 
 nav{
@@ -81,7 +81,7 @@ footer {
 }
 a:link{
   text-decoration: none;
-  transition: .5s;
+  transition: .2s;
 }
 footer a:link {
   color: #bbb;
@@ -92,6 +92,9 @@ footer a:visited {
 }
 footer a:hover {
   color: rgb(136, 224, 250);
+}
+footer a:active {
+  color: rgb(218, 218, 218);
 }
 
 footer section{
@@ -121,4 +124,39 @@ footer h1{
 
 body > section {
   padding: 30px 45px 30px 45px;
+}
+
+.alert{
+  --display: flex;
+  display: var(--display);
+  justify-content: space-between;
+  margin: 5px;
+  background-color: rgb(180, 230, 235);
+  border: 1px solid rgb(11, 149, 159);
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1.5em;
+  transition: 1s;
+}
+
+.warning{
+  background-color: rgb(232, 213, 6);
+  border: 1px solid rgb(211, 180, 3);
+}
+
+.error{
+  background-color: rgb(252, 149, 147);
+  border: 3px solid rgb(186, 38, 21);
+}
+
+/* .alert::after {
+  content: '<span>x</span>';
+  top: 3px;
+  right: 3px;
+  margin: 5px;
+
+} */
+
+.hide {
+  display:hidden;
 }
