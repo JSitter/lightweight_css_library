@@ -1,10 +1,39 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap);
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(https://fonts.googleapis.com/css?family=Lato:300&display=swap)
+}
+
 body{
   margin: 0px;
   font-size: 12pt;
 }
+
 * { 
-  font-family: 'Lato', Helvetica, sans-serif
+  font-family: Lato;
 }
+
+header{
+  width: 100%;
+  min-height: 500px;
+  background-color: #444;
+}
+
+.header-logo {
+  display: block;
+  padding: 50px;
+  font-family: Lato, 'Times New Roman', Times, serif;
+  font-size: 6em;
+}
+
+/* .header-logo a {
+  font-family: "OpenSans";
+  color: #cecece;
+} */
 
 nav{
   height: 75px;
@@ -15,7 +44,7 @@ nav ul{
 }
 
 nav.navbar {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "OpenSans";
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -41,8 +70,6 @@ nav li {
 
 .nav-section{
   width: 100%;
-  /* display: flex;
-  flex-direction: row; */
 }
 
 .nav-section > ul {
@@ -64,7 +91,7 @@ nav a:visited{
 }
 
 nav a:hover{
-  color: green;
+  color: rgb(6, 182, 144);
 }
 
 footer {
@@ -72,27 +99,41 @@ footer {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  background-color: black;
-  color: white;
+  background-color: rgb(43, 43, 43);
+  color: rgb(143, 143, 143);
   bottom: 0px;
   margin: 0px;
   padding: 40px 0px 40px 0px;
+  min-height: 400px;
 
 }
+
+a {
+  transition: 400ms;
+}
+
 a:link{
   text-decoration: none;
-  transition: .2s;
+
 }
+
+footer a{
+  transition: 400ms;
+}
+
 footer a:link {
-  color: #bbb;
+  color: rgb(2, 148, 233);
+
 }
 
 footer a:visited {
   color: #777;
 }
+
 footer a:hover {
-  color: rgb(136, 224, 250);
+  color: rgb(230, 230, 230);
 }
+
 footer a:active {
   color: rgb(218, 218, 218);
 }
@@ -111,7 +152,7 @@ footer ul{
 }
 
 h1, h2, h3, h4, h5, h6, h7 {
-  font-family: 'Open Sans:800', Helvetica, sans-serif
+  font-family: 'OpenSans';
 }
 
 h1 {
@@ -119,7 +160,7 @@ h1 {
 }
 
 footer h1{
-  font-family: 'Open Sans:800', Helvetica, sans-serif
+  font-family: 'OpenSans';
 }
 
 body > section {
@@ -136,7 +177,7 @@ body > section {
   border-radius: 10px;
   padding: 15px;
   font-size: 1.5em;
-  transition: 1s;
+  transition: 400ms;
 }
 
 .warning{
@@ -149,14 +190,88 @@ body > section {
   border: 3px solid rgb(186, 38, 21);
 }
 
-/* .alert::after {
-  content: '<span>x</span>';
-  top: 3px;
-  right: 3px;
-  margin: 5px;
-
-} */
-
 .hide {
   display:hidden;
+}
+
+table {
+  background-color: #d0d0d0;
+  width: auto;
+  margin: 0px;
+  padding: 20px;
+  border: 2px solid #888;
+  border-radius: 15px;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 200ms;
+}
+
+tr:nth-child(even){
+  background: #efefef;
+}
+
+td, th {
+  padding: 18px 40px 18px 40px;
+  border: 0px;
+  margin: 0px;
+  transition: 300ms;
+}
+
+.hover:hover {
+  background-color: rgb(83, 83, 83);
+  color: #adadad;
+}
+
+th {
+  font-family: 'OpenSans';
+  background-color: #444;
+  color: #ddd;
+}
+
+section.post-footer {
+  display: flex;
+  flex-direction: row;
+  width: calc(100% - 90px);
+  background-color: #010101;
+  color: rgb(129, 129, 129);
+}
+
+section.post-footer > h1, section.post-footer > h2, section.post-footer > h3,  section.post-footer > h4, section.post-footer > h5, section.post-footer > h6, section.post-footer > h7{
+  font-size:1.75em;
+  color: #444;
+
+}
+
+section.post-footer ul {
+  flex-direction: column;
+  list-style: none;
+}
+
+section.post-footer a:link {
+  color: #333;
+}
+
+section.post-footer a:visited{
+  color: #292929;
+}
+
+section.post-footer a:hover{
+  color: #666;
+}
+
+input[type=text] {
+  padding: 12px 20px;
+  width: calc(100% - 100px);
+  margin: 8px 50px;
+  background: rgba(92, 92, 92, 0);
+  border-radius: 5px;
+  border: 2px solid rgb(185, 185, 185);
+  outline: none;
+
+}
+
+form{
+  width: calc(100%-80px);
+  padding: 40px;
 }
