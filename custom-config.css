@@ -43,3 +43,7 @@
     /* mix-blend-mode: darken; */
     background-color: rgba(30, 30, 30, 0.924);
 }
+
+.article {
+    flex-direction: row;
+}
