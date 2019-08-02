@@ -161,6 +161,14 @@ h1 {
   font-size: 2em;
 }
 
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
 footer h1 {
   font-family: var(--heading-font);
 }
@@ -193,8 +201,9 @@ body > section {
 }
 
 .hide {
-  display:hidden;
+  display:none!important;
 }
+
 
 table {
   background-color: rgba(23, 23, 23, 0.541);
@@ -371,3 +380,39 @@ article {
 p {
   max-width: 40em;
 }
+
+.col-row {
+  margin: 30px 50px;
+}
+
+.article-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
+}
+
+.panel-overlay {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(23, 23, 23, 0.541);
+  z-index: 10000;
+  top: 0px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.panel-overlay-content {
+
+  z-index: 10500;
+  background-color: #efefef;
+  padding: 75px;
+  border: 1px solid #999;
+  border-radius: 20px;
+
+}
+
